@@ -14,5 +14,5 @@ const files = readdirSync(dir, { withFileTypes: true }).filter((f) => path.extna
 
 export const posts = files.map((f) => {
 	const post = matter(readFileSync(path.join(f.parentPath, f.name)));
-	return { slug: f.name, title: post.data.title, date: post.data.date, content: post.content };
+	return { slug: f.name.slice(0, -4), title: post.data.title, date: post.data.date, content: post.content };
 });

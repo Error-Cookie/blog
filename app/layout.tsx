@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className + "px-4 py-8 mx-auto max-w-3xl"}>
+			<body className={inter.className + " px-4 py-8 mx-auto max-w-3xl"}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<Header />
 					<main className="mt-8 prose dark:prose-invert max-w-full">{children}</main>
