@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-	output: "standalone",
+	output: "export",
 };
 
 const withMDX = createMDX({
